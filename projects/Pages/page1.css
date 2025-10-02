@@ -1,0 +1,30 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    color: brown;
+    background-color: antiquewhite;
+}
+
+header h1 { 
+    font-family: Trattatello, fantasy;
+}
+
+#hero-title {
+    color: darkblue;
+    font-weight: bold;
+}
+
+.highlight {
+    color: green;
+    font-weight: bold;
+}
+
+.deemphasize {
+    color: gray;
+}
+
+span.special {
+    color: red;
+    font-style: italic;
+}
+
