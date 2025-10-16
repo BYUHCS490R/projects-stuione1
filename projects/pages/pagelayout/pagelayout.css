@@ -1,0 +1,131 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    color: brown;
+    background-color: antiquewhite;
+    margin: 0;
+  }
+  
+  #wrapper {
+    width: 880px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #e2d9c1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  }
+  
+  header {
+    height: 200px;
+    padding: 20px 16px;
+    background-image: url('images/surfbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: padding-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #d2c7ad;
+    text-align: center;
+    color: darkblue;
+  }
+  
+  #hero-title {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #ffffff;
+    line-height: 1.1;
+    margin: 0 0 10px 0;
+  }
+  
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: brown;
+    border: 1px solid #c9bfa6;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin-right: 8px;
+    font-weight: 600;
+  }
+  
+  nav a:hover {
+    background-color: #fff5e4;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  }
+  
+  main {
+    background-color: #fff7e8;
+    padding: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  figure {
+    width: 40%;
+    margin: 4px 16px 12px 0;
+    border: 1px solid #e2d9c1;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: #ffffff;
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+    padding: 6px;
+  }
+  
+  .float-left { float: left; }
+  
+  footer {
+    text-align: center;
+    background-color: #f6ead4;
+    color: #6b6b6b;
+    padding: 10px;
+    border-top: 1px solid #d2c7ad;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .float-left { 
+    float: left; 
+    width: 42%; 
+    margin: 4px 16px 12px 0;
+  }
+  
+  .float-right { 
+    float: right; 
+    width: 42%; 
+    margin: 4px 0 12px 16px;
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+    padding: 6px;
+  }
+  
