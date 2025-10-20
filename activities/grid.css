@@ -9,5 +9,30 @@ body {
 }
 
 .child{
-    background-color: aquamarine;
+    background-color: gold;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "lside main rside"
+    "footer footer footer";
+}
+
+header {
+    grid-area: header;
+
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+}
+
+nav {
+    grid-area: lside
 }
