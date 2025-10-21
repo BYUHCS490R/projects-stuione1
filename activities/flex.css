@@ -10,6 +10,25 @@ body{
     width: 300px;
 }
 
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: azure;
+   color: blue;
+   width: 150px;
+   text-decoration: none;
+
+
+}
+
+nav a:hover{
+    color: brown;
+}
+
+nav{
+    display: flex;
+}
+
 .row{
     display: flex;
     flex-flow: row;
