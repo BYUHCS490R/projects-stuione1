@@ -71,6 +71,12 @@ body {
   }
 
   .linkarea {
-    display: block;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
   }
+  
+  .linkarea a {
+    display: block;
+  }
+  
