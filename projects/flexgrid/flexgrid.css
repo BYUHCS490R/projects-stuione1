@@ -16,7 +16,7 @@ body {
   nav {
     font-family: serif;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: rgb(255, 179, 0);
     padding: 10px;
   }
