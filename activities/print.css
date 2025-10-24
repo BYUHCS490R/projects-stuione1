@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: green;
+    color: black;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  nav {
+    font-family: serif;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 179, 0);
+    padding: 10px;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  aside {
+    width: 25%;
+    background-color: rgba(255, 255, 0, 0.517);
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .card {
+    width: 250px;
+    border: thin solid black;
+    background: white;
+  }
+  
+  .card img {
+    width: 100%;
+    display: block;
+  }
+  
+  footer {
+    background-color: yellowgreen;
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  footer a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .linkarea {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+  }
+  
+  .print-only {
+    display: none;
+  }
+  
+  @media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    aside {
+      width: 100%;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  
+  @media print {
+    @page {
+      margin: 1in;
+    }
+  
+    body {
+      background: white !important;
+      color: black !important;
+      font-size: 12pt;
+    }
+  
+    nav, aside {
+      display: none !important;
+    }
+  
+    header, footer {
+      background: none !important;
+      color: black !important;
+      text-align: left;
+      padding: 0;
+    }
+  
+    main {
+      display: block;
+      padding: 0;
+    }
+  
+    .card {
+      width: 100% !important;
+      border: 1px solid black;
+      page-break-inside: avoid;
+      margin-bottom: 10px;
+    }
+  
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+  
+    a[href^="http"]:after {
+      content: " (" attr(href) ")";
+      font-size: 10pt;
+    }
+  
+    .print-only {
+      display: block !important;
+      margin-top: 15px;
+    }
+  }
+  
