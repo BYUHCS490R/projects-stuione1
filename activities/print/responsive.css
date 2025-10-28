@@ -1,0 +1,80 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+  }
+  
+  header{
+    background: rgb(5,5,111);
+    color:#fff;
+    padding:12px 16px;
+  }
+  
+  header h1,
+  main h2,
+  .sidebar h3{ margin:0; }
+  
+  nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    background: rgb(100,100,231);
+    gap:8px;
+    padding:8px;
+  }
+  
+  nav a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    background: rgb(100,100,231);
+    color:#fff;
+    border:1px solid rgba(0,0,0,.15);
+  }
+  
+  nav a:hover{
+    background:#fff;
+    color: rgb(100,100,231);
+  }
+  
+  .main-row{
+    display:flex;
+    gap:16px;
+    padding:16px;
+  }
+  
+  .sidebar{
+    width:220px;
+  }
+  
+  .row{
+    display:flex;
+    flex-flow:row wrap;
+    gap:12px;
+  }
+  
+  .card{
+    border:1px solid #ddd;
+    box-shadow:3px 3px 5px rgba(200,200,200,.5);
+    width:280px;
+    margin:5px;
+    padding:8px;
+  }
+  
+  .card img{ width:100%; height:auto; display:block; }
+  
+  footer{
+    text-align:center;
+    padding:16px;
+  }
+  
+  @media only screen and (max-width: 880px){
+    .main-row{ flex-direction:column; }
+    .sidebar{ width:100%; }
+    .main-card{ order:-1; }
+  }
+  
+  @media only screen and (max-width: 600px){
+    nav{ flex-direction:column; }
+    .card{ width:100%; }
+  }
