@@ -31,6 +31,34 @@
 
       <div class="row">
 
+        <section class="qa-section">
+          <h2>Engagement Questions</h2>
+        
+          <div class="qa-card">
+            <h3>1) Why do we need a viewport meta tag?</h3>
+            <p>
+              It makes the page fit the screen size on phones. Without it, the page looks tiny and zoomed out.
+            </p>
+          </div>
+        
+          <div class="qa-card">
+            <h3>2) If I set flex-direction: column and later set flex-direction: row, which one works?</h3>
+            <p>
+              The one that comes later in the CSS. If two rules affect the same thing, the last one wins unless another rule is stronger.
+            </p>
+          </div>
+        
+          <div class="qa-card">
+            <h3>3) How can you change CSS for a phone?</h3>
+            <p>Use a media query, like:</p>
+        
+            <pre><code>@media only screen and (max-width: 600px){
+          /* phone styles */
+        }</code></pre>
+          </div>
+        </section>
+        
+
         <article class="card">
           <img src="images/byuh.jpg" alt="Front entrance of BYUH">
           <h3>1st Card</h3>
