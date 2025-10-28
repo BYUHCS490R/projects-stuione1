@@ -1,78 +1,68 @@
+<!-- responsive.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Web Design - Print Page</title>
-  <link rel="stylesheet" href="print.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Pages</title>
+  <link rel="stylesheet" href="responsive.css" media="screen">
+  <link rel="stylesheet" href="print.css" media="print">
 </head>
 <body>
   <header>
-    <h1>Shawn Tuione Responsive Web Design</h1>
+    <h1>Slades Web Design Site</h1>
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Projects</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
   </nav>
 
-  <div class="container">
-    <aside>
-      <h2>Overview</h2>
-      <p>
-        Responsive design adjusts to fit any screen size. Using the viewport meta tag, 
-        CSS Grid, and Flexbox, we can create pages that look great on phones, tablets, and desktops.
-      </p>
+  <div class="main-row">
+    <aside class="sidebar">
+      <h3>Side Bar</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
     </aside>
 
     <main>
-      <div class="card">
-        <img src="images/surfing1.jpg" alt="Surfing" />
-        <h3>Viewport Meta Tag</h3>
-        <p>
-          The viewport meta tag ensures your site scales correctly on mobile devices.
-        </p>
-      </div>
+      <h2>Responsive Pages</h2>
 
-      <div class="card">
-        <img src="images/surfing1.jpg" alt="Surfing" />
-        <h3>Media Queries</h3>
-        <p>
-          Media queries let you apply different CSS rules depending on screen width.
-        </p>
-      </div>
+      <div class="row">
+        <article class="card">
+          <img src="byuh.jpg" alt="Front entrance of BYUH">
+          <h3>1st Card</h3>
+          <p>Some text about BYUH reconstruction...</p>
+          <a href="#">More Info</a>
+        </article>
 
-      <div class="card">
-        <img src="images/surfing1.jpg" alt="Surfing" />
-        <h3>Print Styling</h3>
-        <p>
-          Print media queries make your page clean and readable when printed.
-        </p>
+        <article class="card main-card">
+          <img src="byuh.jpg" alt="Front entrance of BYUH">
+          <h3>2nd Card</h3>
+          <p>Some text about BYUH reconstruction...</p>
+          <a href="#">More Info</a>
+        </article>
+
+        <article class="card">
+          <img src="byuh.jpg" alt="Front entrance of BYUH">
+          <h3>3rd Card</h3>
+          <p>Some text about BYUH reconstruction...</p>
+          <a href="#">More Info</a>
+        </article>
+
+        <article class="card">
+          <img src="byuh.jpg" alt="Front entrance of BYUH">
+          <h3>4th Card</h3>
+          <p>Some text about BYUH reconstruction...</p>
+          <a href="#">More Info</a>
+        </article>
       </div>
     </main>
   </div>
 
   <footer>
-    <div class="linkarea">
-      <a href="https://www.youtube.com/watch?v=C7dpDghPYFQ" target="_blank">Lesson Video</a>
-      <a href="#">Flexbox</a>
-      <a href="#">CSS Grid</a>
-      <a href="#">Media Queries</a>
-      <a href="#">Print Styles</a>
-    </div>
-    <p class="print-only" style="display:none">
-      Printed on: <span id="today"></span>
-    </p>
+    <p>&copy; 2025 Chris Slade</p>
   </footer>
-
-  <script>
-    (function () {
-      var el = document.getElementById("today");
-      if (el) el.textContent = new Date().toLocaleString();
-    })();
-  </script>
 </body>
 </html>
