@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Table Practice Engagement</title>
+  <link rel="stylesheet" href="table.css">
+</head>
+<body>
+
+<header>
+  <h1>Table Practice Engagement</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Photos</a>
+  <a href="#">About</a>
+  <a href="#">Calendar</a>
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  <h2>Weekly Plan (Table Demo)</h2>
+
+  <div class="table-wrap">
+    <table aria-describedby="tbl-desc">
+      <caption>Simple schedule with headers and spans</caption>
+
+      <thead>
+        <tr>
+          <th scope="col">Time</th>
+          <th scope="col">Mon</th>
+          <th scope="col">Tue</th>
+          <th scope="col">Wed</th>
+          <th scope="col">Thu</th>
+          <th scope="col">Fri</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">8–9</th>
+          <td rowspan="2">CS 101 Lab</td>
+          <td>Study</td>
+          <td rowspan="2">Math</td>
+          <td>Study</td>
+          <td>Workout</td>
+        </tr>
+        <tr>
+          <th scope="row">9–10</th>
+          <td>Office Hours</td>
+          <td>Team Mtg</td>
+          <td>CS 101</td>
+        </tr>
+        <tr>
+          <th scope="row">10–11</th>
+          <td colspan="2">Project Work</td>
+          <td>English</td>
+          <td>Project Work</td>
+          <td>Quiz Review</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th scope="row">Note</th>
+          <td colspan="5">Zebra rows with <code>tbody tr:nth-child(even)</code>. Borders collapsed.</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <p id="tbl-desc" class="hide">
+      Demo table with caption, thead/tbody/tfoot, and basic row/col spans.
+    </p>
+  </div>
+
+  <h2>Engagement Questions</h2>
+  <ol>
+    <li><strong>Why don't we use the border attribute?</strong> It’s outdated HTML. We use CSS borders instead so the structure and styling are separate and easier to control.</li>
+    <li><strong>How to color every other row?</strong> Use <code>tbody tr:nth-child(even)</code> in CSS for zebra striping.</li>
+  </ol>
+</main>
+
+</body>
+</html>

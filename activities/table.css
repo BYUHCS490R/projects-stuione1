@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #111;
+    background: #f7f8fb;
+  }
+  
+  header {
+    background: rgb(5,5,111);
+    color: #fff;
+    padding: 12px 16px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 8px;
+    justify-content: space-evenly;
+    background: rgb(100,100,231);
+    padding: 8px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 6px;
+  }
+  
+  nav a:hover {
+    background: #fff;
+    color: rgb(100,100,231);
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 16px auto;
+    background: #fff;
+    padding: 16px;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+  }
+  
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    caption-side: top;
+  }
+  
+  caption {
+    font-weight: 700;
+    color: rgb(5,5,111);
+    padding: 8px 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    vertical-align: middle;
+  }
+  
+  thead th {
+    background: rgb(100,100,231);
+    color: #fff;
+    text-align: left;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #f2f4ff;
+  }
+  
+  .hide {
+    position: absolute;
+    left: -9999px;
+  }
+
+  @media (max-width: 560px) {
+    nav {
+      flex-direction: column;
+    }
+  }
+  
+
+  @media print {
+    nav {
+      display: none;
+    }
+    body {
+      background: #fff;
+      color: #000;
+      font: 12pt/1.4 Georgia, serif;
+    }
+    main {
+      border: 0;
+      padding: 0;
+    }
+  }
+  
