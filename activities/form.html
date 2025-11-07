@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Tuione Web Design</h1>
+    </header>
+
+    <main>
+        <h1>Form</h1>
+        <form action="formprocess.html" method="post">
+            <div>
+                <label for="fname">Full Name:</label>
+                <input type="text" placeholder="Full Name" id="fname">
+            </div>
+            <div>
+            <label for="fname">Email:</label>
+            <input type="emaild" value="your@gmail.com" id="fname">
+            </div>
+            <div>
+            <label for="pass">Password:</label>
+            <input type="password" name="Password" id="pass">
+            </div>
+            <div>
+                <label for="State">State</label>
+                <select name="state" id="state">
+                    <option value="HI" selected> Hawaii</option>
+                    <option value="CA">California</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <label> <input type="checkbox" checked> I agree to terms </label>
+            </div>
+            <div>
+                Gender 
+                <label> <input type="radio" name="Gender" value="Male"> Male</label>
+                <label> <input type="radio" name="Gender" value="Male"> Female</label>
+            </div>
+            <div>
+                <label> for= co</label>
+            </div>
+            <div>
+            <input type="submit" text="sign up">
+            </div>
+        </form>
+        <p>
+            1.Tells the form where to send the data when you hit submit.
+        </p>
+
+        <p>
+            2. Tells the form how to send the data.
+        </p>
+        <p>
+            3. GET puts the data in the URL (you can see it). (change, add, update, remove)
+
+            <p>POST hides the data (you can’t see it). (reading)</p>
+        </p>
+    </main>
+    <footer>
+        &copy;Shawn Tuione
+    </footer>
+    
+</body>
+</html>
