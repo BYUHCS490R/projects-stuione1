@@ -15,18 +15,18 @@
         <form action="formprocess.html" method="post">
             <div>
                 <label for="fname">Full Name:</label>
-                <input type="text" placeholder="Full Name" id="fname">
+                <input type="text" placeholder="Full Name" id="fname" name="fname">
             </div>
             <div>
-            <label for="fname">Email:</label>
-            <input type="emaild" value="your@gmail.com" id="fname">
+                <label for="email">Email:</label>
+                <input type="email" value="your@gmail.com" id="email" name="email">
             </div>
             <div>
-            <label for="pass">Password:</label>
-            <input type="password" name="Password" id="pass">
+                <label for="pass">Password:</label>
+                <input type="password" name="Password" id="pass">
             </div>
             <div>
-                <label for="State">State</label>
+                <label for="state">State</label>
                 <select name="state" id="state">
                     <option value="HI" selected> Hawaii</option>
                     <option value="CA">California</option>
@@ -39,15 +39,16 @@
             <div>
                 Gender 
                 <label> <input type="radio" name="Gender" value="Male"> Male</label>
-                <label> <input type="radio" name="Gender" value="Male"> Female</label>
+                <label> <input type="radio" name="Gender" value="Female"> Female</label>
             </div>
             <div>
-                <label> for= co</label>
+                <label for="co"> </label>
             </div>
             <div>
-            <input type="submit" text="sign up">
+                <input type="submit" value="sign up">
             </div>
         </form>
+
         <p>
             1.Tells the form where to send the data when you hit submit.
         </p>
@@ -57,10 +58,11 @@
         </p>
         <p>
             3. GET puts the data in the URL (you can see it). (change, add, update, remove)
-
-            <p>POST hides the data (you can’t see it). (reading)</p>
         </p>
+        <p>POST hides the data (you can’t see it). (reading)</p>
+
     </main>
+
     <footer>
         &copy;Shawn Tuione
     </footer>
