@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>
@@ -13,19 +14,23 @@
     <main>
         <h1>Form</h1>
         <form action="formprocess.html" method="post">
-            <div>
+            <fieldset>
+                <legend>Sign Up</legend>
+            <div class="form-row">
                 <label for="fname">Full Name:</label>
                 <input type="text" placeholder="Full Name" id="fname" name="fname">
             </div>
-            <div>
+            <div class="form-row">
                 <label for="email">Email:</label>
-                <input type="email" value="your@gmail.com" id="email" name="email">
+                <input type="email" value="" id="email" name="email">
             </div>
-            <div>
+            <div class="form-row">
                 <label for="pass">Password:</label>
                 <input type="password" name="Password" id="pass">
             </div>
-            <div>
+            </fieldset>
+            <fieldset>
+            <div class="form-row">
                 <label for="state">State</label>
                 <select name="state" id="state">
                     <option value="HI" selected> Hawaii</option>
@@ -33,20 +38,26 @@
                     <option value="UT">Utah</option>
                 </select>
             </div>
-            <div>
+            <div class="check-row">
+                <div class="spacer"></div>
                 <label> <input type="checkbox" checked> I agree to terms </label>
             </div>
-            <div>
+            <div class="check-row">
+                <div class="spacer"></div>
                 Gender 
                 <label> <input type="radio" name="Gender" value="Male"> Male</label>
                 <label> <input type="radio" name="Gender" value="Female"> Female</label>
             </div>
-            <div>
-                <label for="co"> </label>
             </div>
-            <div>
+            <div class="form-row">
+                <label for="comment">Comments:</label>
+                <textarea name="Comment" id="comment">Hello</textarea>
+            </div>
+            <div class="form-row">
+                <div class="spacer"></div>
                 <input type="submit" value="sign up">
             </div>
+        </fieldset>
         </form>
 
         <p>

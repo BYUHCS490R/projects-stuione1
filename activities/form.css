@@ -1,0 +1,73 @@
+body {
+    background-color: beige;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+.check-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+
+}
+
+.form-row input {
+    border-radius: 4px;
+}
+
+.form-row input[type= 'submit' ] {
+    background-color: rgb(194, 171, 142);
+    color: white;
+}
+
+.form-row input: not ([type= 'submit' ]) {
+    padding: 8px;
+    
+}
+
+fieldset {
+    background-color: rgba(180, 165, 144, 0.786);
+    border-radius: 5px;
+    box-shadow: 10px;
+    margin: auto;
+   
+}
+
+legend {
+    background-color: rgb(194, 171, 142);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row, .spacer {
+        text-align: right;
+    }
+}
+
+
+
+
+
+
+
