@@ -3,80 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Tuione Form</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <header>
-        <h1>Tuione Web Design</h1>
-    </header>
 
-    <main>
-        <h1>Form</h1>
-        <form action="formprocess.html" method="post">
-            <fieldset>
-                <legend>Sign Up</legend>
+<header>
+    <h1>Tuione Web Design</h1>
+</header>
+
+<main>
+    <h2>Sign Up Form</h2>
+
+    <form action="formprocess.html" method="post">
+
+        <fieldset>
+            <legend>Personal Info</legend>
+
             <div class="form-row">
                 <label for="fname">Full Name:</label>
-                <input type="text" placeholder="Full Name" id="fname" name="fname">
+                <input type="text" id="fname" name="fname" placeholder="Enter full name" required>
             </div>
+
             <div class="form-row">
                 <label for="email">Email:</label>
-                <input type="email" value="" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
             </div>
+
+            <div class="form-row">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="808-555-5555">
+            </div>
+
+            <div class="form-row">
+                <label for="dob">Birth Date:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
             <div class="form-row">
                 <label for="pass">Password:</label>
-                <input type="password" name="Password" id="pass">
+                <input type="password" id="pass" name="password" placeholder="Create a password">
             </div>
-            </fieldset>
-            <fieldset>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
             <div class="form-row">
-                <label for="state">State</label>
-                <select name="state" id="state">
-                    <option value="HI" selected> Hawaii</option>
+                <label for="state">State:</label>
+                <select id="state" name="state">
+                    <option value="HI">Hawaii</option>
                     <option value="CA">California</option>
                     <option value="UT">Utah</option>
                 </select>
             </div>
+
             <div class="check-row">
                 <div class="spacer"></div>
-                <label> <input type="checkbox" checked> I agree to terms </label>
+                <label><input type="checkbox" name="terms"> I agree to the terms</label>
             </div>
+
             <div class="check-row">
-                <div class="spacer"></div>
-                Gender 
-                <label> <input type="radio" name="Gender" value="Male"> Male</label>
-                <label> <input type="radio" name="Gender" value="Female"> Female</label>
+                <label class="left-label">Gender:</label>
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
             </div>
-            </div>
+
             <div class="form-row">
                 <label for="comment">Comments:</label>
-                <textarea name="Comment" id="comment">Hello</textarea>
+                <textarea id="comment" name="comment" placeholder="Write something..."></textarea>
             </div>
+
             <div class="form-row">
                 <div class="spacer"></div>
-                <input type="submit" value="sign up">
+                <input type="submit" value="Sign Up">
             </div>
+
         </fieldset>
-        </form>
 
-        <p>
-            1.Tells the form where to send the data when you hit submit.
-        </p>
+    </form>
 
-        <p>
-            2. Tells the form how to send the data.
-        </p>
-        <p>
-            3. GET puts the data in the URL (you can see it). (change, add, update, remove)
-        </p>
-        <p>POST hides the data (you can’t see it). (reading)</p>
+</main>
 
-    </main>
+<footer>
+    &copy; 2025 Tuione Web Design
+</footer>
 
-    <footer>
-        &copy;Shawn Tuione
-    </footer>
-    
 </body>
 </html>

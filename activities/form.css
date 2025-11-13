@@ -1,12 +1,35 @@
 body {
     background-color: beige;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.form-row {
+
+header, footer {
+    background-color: rgb(180, 165, 144);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.3rem;
+}
+
+main {
+    width: 85%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.form-row, .check-row {
     display: flex;
     gap: 10px;
     margin: 10px 0;
-
+    align-items: center;
 }
 
 .form-row label {
@@ -14,60 +37,79 @@ body {
     text-align: right;
 }
 
-.spacer {
+.left-label {
     width: 150px;
     text-align: right;
 }
 
-.check-row {
-    display: flex;
-    gap: 10px;
-    margin: 10px 0;
 
+.spacer {
+    width: 150px;
 }
 
-.form-row input {
-    border-radius: 4px;
-}
 
-.form-row input[type= 'submit' ] {
-    background-color: rgb(194, 171, 142);
-    color: white;
-}
-
-.form-row input: not ([type= 'submit' ]) {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
     padding: 8px;
-    
+    border-radius: 6px;
+    border: 1px solid #8a7c6b;
+    background-color: #f6f1e7;
 }
+
+
+input[type="submit"] {
+    background-color: rgb(143, 121, 91);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(121, 102, 76);
+}
+
 
 fieldset {
-    background-color: rgba(180, 165, 144, 0.786);
-    border-radius: 5px;
-    box-shadow: 10px;
-    margin: auto;
-   
+    background-color: rgba(196, 180, 160, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(150, 135, 115);
 }
 
 legend {
-    background-color: rgb(194, 171, 142);
+    background-color: rgb(143, 121, 91);
     color: white;
-    border-radius: 10px;
-    padding: 5px;
+    padding: 6px 12px;
+    border-radius: 8px;
 }
 
-@media ONLY screen AND (max-width: 480px) {
+
+@media only screen and (max-width: 480px) {
+
     .form-row, .check-row {
         flex-direction: column;
+        align-items: flex-start;
     }
 
-    .form-row, .spacer {
-        text-align: right;
+    .form-row label,
+    .check-row label,
+    .spacer,
+    .left-label {
+        width: 100%;
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 14px;
+        font-size: 1.1rem;
     }
 }
-
-
-
-
-
-
-
