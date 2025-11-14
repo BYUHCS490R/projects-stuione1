@@ -15,14 +15,14 @@
 <main>
     <h2>Sign Up Form</h2>
 
-    <form action="formprocess.html" method="post">
+    <form action="formprocess.html" method="post" id="myform">
 
         <fieldset>
             <legend>Personal Info</legend>
 
             <div class="form-row">
-                <label for="fname">Full Name:</label>
-                <input type="text" id="fname" name="fname" placeholder="Enter full name" required>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
             </div>
 
             <div class="form-row">
@@ -88,7 +88,51 @@
 
 <footer>
     &copy; 2025 Tuione Web Design
-</footer>
+</footer> 
+<script>
+    document.getElementById('myform').addEventListener ('submit', function(event) {
+        event.preventDefault();
+        alert("Form Submitted");
+
+        const fullname = document.getElementById('fullname').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('pass').value;
+        const age = document.getElementById('age').value;
+
+        if (!fullname || !email) {
+        alert("You need a name and email.");
+        return;
+    }
+
+    const formData = {
+        name: fullname,
+        email: email,
+        password: password,
+        age: age
+    };
+
+    console.log(formData);
+    alert("Form Submitted!");
+
+    })
+    
+</script>
+
+<p>
+    JavaScript is a language that makes websites interactive. It got its name because the company that created it wanted to use the popularity of Java, even though the two languages are different.
+</p>
+
+<p>
+    You can run JavaScript in the browser or with Node.js
+</p>
+
+<p>
+    The most popular front-end JavaScript library used to be jQuery.
+</p>
+
+<p>
+    The most popular front-end JavaScript library today is React.
+</p>
 
 </body>
 </html>
