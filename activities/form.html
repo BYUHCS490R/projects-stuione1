@@ -15,34 +15,29 @@
 <main>
     <h2>Sign Up Form</h2>
 
-    <form action="formprocess.html" method="post" id="myform">
+    <form id="myform">
 
         <fieldset>
             <legend>Personal Info</legend>
 
             <div class="form-row">
                 <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+                <input type="text" id="fullname" name="fullname" required>
             </div>
 
             <div class="form-row">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <input type="email" id="email" name="email" required>
             </div>
 
             <div class="form-row">
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" placeholder="808-555-5555">
-            </div>
-
-            <div class="form-row">
-                <label for="dob">Birth Date:</label>
-                <input type="date" id="dob" name="dob">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1">
             </div>
 
             <div class="form-row">
                 <label for="pass">Password:</label>
-                <input type="password" id="pass" name="password" placeholder="Create a password">
+                <input type="password" id="pass" name="password" required>
             </div>
 
         </fieldset>
@@ -60,23 +55,21 @@
             </div>
 
             <div class="check-row">
-                <div class="spacer"></div>
                 <label><input type="checkbox" name="terms"> I agree to the terms</label>
             </div>
 
             <div class="check-row">
-                <label class="left-label">Gender:</label>
+                <label>Gender:</label>
                 <label><input type="radio" name="gender" value="Male"> Male</label>
                 <label><input type="radio" name="gender" value="Female"> Female</label>
             </div>
 
             <div class="form-row">
                 <label for="comment">Comments:</label>
-                <textarea id="comment" name="comment" placeholder="Write something..."></textarea>
+                <textarea id="comment" name="comment"></textarea>
             </div>
 
             <div class="form-row">
-                <div class="spacer"></div>
                 <input type="submit" value="Sign Up">
             </div>
 
@@ -90,70 +83,8 @@
 
 <footer>
     &copy; 2025 Tuione Web Design
-</footer> 
-<script>
-    document.getElementById('myform').addEventListener ('submit', function(event) {
-        event.preventDefault();
-        alert("Form Submitted");
+</footer>
 
-        const fullname = document.getElementById('fullname').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('pass').value;
-        const age = document.getElementById('age').value;
-
-        if (!fullname || !email) {
-        alert("You need a name and email.");
-        return;
-    }
-
-    const formData = {
-        name: fullname,
-        email: email,
-        password: password,
-        age: age
-    };
-
-    console.log(formData);
-    alert("Form Submitted!");
-
-    const xhr = new XMLHttpRequest();
-        xhr.open("GET", "submit.json", true);
-        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                alert("Form submitted successfully!");
-
-                const response = JSON.parse(xhr.responseText);
-                console.log(response);
-
-                document.getElementById("message").innerText = response.message;
-            }
-            else if (xhr.readyState === 4) {
-                alert("Error submitting form.");
-            }
-        };
-
-        xhr.send(JSON.stringify(formData));
-    });
-    
-</script>
-
-<p>
-    JavaScript is a language that makes websites interactive. It got its name because the company that created it wanted to use the popularity of Java, even though the two languages are different.
-</p>
-
-<p>
-    You can run JavaScript in the browser or with Node.js
-</p>
-
-<p>
-    The most popular front-end JavaScript library used to be jQuery.
-</p>
-
-<p>
-    The most popular front-end JavaScript library today is React.
-</p>
-
+<script src="form.js"></script>
 </body>
 </html>
