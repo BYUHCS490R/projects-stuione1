@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Island Adventures - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Island Adventures</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="islands.html">Islands</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Contact</h2>
+
+    <p>
+        This form does not send real travel bookings, but it shows how a basic contact form can be
+        processed with JavaScript. The page will display a message after the form has been checked and
+        “submitted.”
+    </p>
+
+    <form id="myform" class="contact-form">
+        <fieldset>
+            <legend>Your Details</legend>
+
+            <div class="form-row">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-row">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1">
+            </div>
+
+            <div class="form-row">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="password" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Message</legend>
+
+            <div class="form-row">
+                <label for="comment">Message:</label>
+                <textarea id="comment" name="comment"></textarea>
+            </div>
+
+            <div class="form-row">
+                <input type="submit" value="Submit">
+            </div>
+        </fieldset>
+
+        <p id="message"></p>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Island Adventures</p>
+</footer>
+
+<script src="form.js"></script>
+</body>
+</html>
